@@ -1,0 +1,19 @@
+[[language]]
+name = "roc"
+scope = "source.roc"
+roots = []
+file-types = ["roc"]
+comment-token = "#"
+indent = { tab-width = 4, unit = " " }
+grammar = "elixir"
+
+[[language]]
+name = "elm"
+scope = "source.elm"
+injection-regex = "elm-prevent-injection-until-https://github.com/elm-tooling/tree-sitter-elm/issues/124"
+file-types = ["elm"]
+roots = ["elm.json"]
+auto-format = true
+comment-token = "--"
+language-server = { command = "elm-language-server" }
+indent = { tab-width = 4, unit = "    " }

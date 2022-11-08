@@ -1,0 +1,16 @@
+theme = "rose_pine_moon"
+
+[editor]
+line-number = "relative"
+idle-timeout = 0
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+"C-f" = ":sh kitty @ launch --no-response --copy-env --hold --cwd=current --type=overlay lf"
+"C-t" = ":sh kitty @ launch --no-response --copy-env --hold --cwd=current --type=tab mix test"
+"C-T" = ":sh kitty @ launch --no-response --copy-env --hold --cwd=current --type=tab pnpm test"
